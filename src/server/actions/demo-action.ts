@@ -3,6 +3,7 @@
 import { demoSchema, DemoValues } from '@/validators/demo-schema';
 import { headers } from 'next/headers';
 import { auth } from '../auth';
+import { revalidatePath } from 'next/cache';
 
 type Result<T> = { success: true; data: T } | { success: false; error: string };
 
@@ -31,6 +32,7 @@ export async function demoSecureAction(
     });
 
     if (!session) {
+      revalidatePath('');
       throw new Error('Unauthorized');
     }
 
