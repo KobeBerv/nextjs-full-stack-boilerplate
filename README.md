@@ -23,8 +23,8 @@ This is a [Next.js](https://nextjs.org) 15 project bootstrapped with [`create-ne
 First, clone the repository:
 
 ```bash
-git clone https://github.com/KobeBerv/nextjs-fullstack-boilerplate.git
-cd nextjs-fullstack-boilerplate
+git clone https://github.com/KobeBerv/nextjs-full-stack-boilerplate.git
+cd nextjs-full-stack-boilerplate
 ```
 
 Then, install the dependencies:
@@ -57,10 +57,6 @@ pnpm prisma db push
 ```
 
 This command will create the necessary tables in your database based on your Prisma schema.
-
-```bash
-pnpm prisma db push
-```
 
 Next, run the development server:
 
